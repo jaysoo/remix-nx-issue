@@ -13,6 +13,7 @@ const ABORT_DELAY = 5_000;
   if (!(global as any).__test__) {
     (global as any).__test__ = 'test! ' + Date.now();
   }
+  // 14
   console.log('>>> server', process.pid);
   console.log(">>> test ", (global as any).__test__);
 })();
